@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #nav{
+        width:100%;
+        height:85px;
+        
+        font-size: 60px;
+        background-color:yellow;
+    }
+    #nav+div{
+        display:grid;
+        grid-template-columns:repeat(3,270px);
+        grid-template-rows: repeat(3,150px);
+        gap:10px;
+        width: 85%;
+        grid-template-areas: 
+        "bigone bigone g1"
+        "bigone bigone g2"
+        "bigone bigone g3"
+    }
+    #nav+div>div{
+       
+        margin-top: 40px;
+        font-size: 30px;
+        
+    }
+    #nav+div>div:nth-child(1){
+        background-color:red;
+        
+        grid-area: bigone;
+        
+
+    }
+    #nav+div>div:nth-child(2){
+        background-color:rgb(72, 213, 72);
+        
+        grid-area: g1;
+    }
+    #nav+div>div:nth-child(3){
+        background-color:rgb(72, 213, 72);
+        
+        grid-area:g2;
+    }
+    #nav+div>div:nth-child(4){
+        background-color:rgb(72, 213, 72);
+        
+        grid-area:g3;
+    }
+    @media all and (min-width:551px) and (max-width:700px){
+        #nav+div{
+        display:grid;
+        grid-template-columns:repeat(3,300px);
+        grid-template-rows: repeat(2,200px);
+        gap:10px;
+        
+        grid-template-areas: 
+        "bigone bigone bigone"
+        "g1 g2 g3";
+    }
+    }
+    @media all and (min-width:300px) and (max-width:550px){
+        #nav+div{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(4,150px);
+
+        
+        grid-template-areas: 
+        "bigone"
+        "g1"
+        "g2"
+        "g3";
+    }
+    }
+</style>
+<body>
+    <div id="nav">Navigation</div>
+    <div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX 1</div>
+        <div>RIGHT BOX 2</div>
+        <div>RIGHT BOX 3</div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* Write your styles here  */
+
+    body {
+      background-color: white;
+    }
+    #header{
+      width:40%;
+      margin: auto;
+      text-align: center;
+    }
+    #doctors{
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: auto;
+      gap:20px;
+      width:80%;
+      margin:auto;
+    }
+    #doctors>div{
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      text-align: center;
+      padding:0px 10px 20px 10px;
+    }
+    #doctors img{
+      width:100%;
+    }
+    p+div{
+      margin-top:30px;
+      display:flex;
+      justify-content:space-between;
+
+    }
+    p+div>button:nth-child(1){
+      background-color:#f9f6f7;
+      border:0px;
+      border-radius:5px;
+      color:#3bb4e0
+    }
+    p+div>button:nth-child(2){
+      background-color:#fa8267;
+      border:0px;
+      border-radius:5px;
+      color:white;
+    }
+
+    #service{
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,300px);
+      width:80%;
+      gap:20px;
+      margin:auto;
+    }
+    #service>div{
+      
+      margin-top: 10px;
+    }
+      /* keep media queries at the bottom */
+    /* Medium screens */
+    @media all and (min-width: 451px) and (max-width: 750px) {
+      #header{
+        width:90%;
+      }
+      #doctors{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        width:90%;
+        
+      }
+      #service{
+      
+        grid-template-columns: repeat(2,1fr);
+        
+        width:90%;
+      
+      }
+    }
+    /* Small screens */
+    @media all and (min-width: 100px) and (max-width: 450px) {
+      #header{
+        width:100%;
+      }
+      #doctors{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        width:100%;
+        
+      }
+      #service{
+      
+        grid-template-columns: repeat(1,1fr);
+        
+        width:100%;
+      
+      }
+    }
+
+
+  </style>
+
+  <body>
+    <div id="header">
+      <h1>Our Specialist</h1>
+      <p>
+        Green above he cattle god saw day multiply under fill in the cattle fowl
+        a all, living, tree word link available in the service for subdue fruit.
+      </p>
+    </div>
+    <!-- Top-section -->
+    <div id="doctors">
+      <!-- This section should have 4 child divs, each div should have image,h3,h6 and div for buttons -->
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel DAVIS</h3>
+        <h6></h6>
+        <p>
+          If you are looking at black cassettes on the web, you may be very confused at the 
+        </p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div><img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel DAVIS</h3>
+        <h6></h6>
+        <p>
+          If you are looking at black cassettes on the web, you may be very confused at the 
+        </p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div></div>
+      <div><img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel DAVIS</h3>
+        <h6></h6>
+        <p>
+          If you are looking at black cassettes on the web, you may be very confused at the 
+        </p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div></div>
+      <div><img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel DAVIS</h3>
+        <h6></h6>
+        <p>
+          If you are looking at black cassettes on the web, you may be very confused at the 
+        </p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div></div>
+    </div>
+
+    <!-- Bottom section  -->
+    <div id="service">
+      <!-- This section should have 6 child divs, each div should have image,h5,p -->
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="">
+        <h5>Teeth Whitening</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae autem animi sit, repellat molestiae dignissimos?</p>
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="">
+        <h5>Teeth Whitening</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae autem animi sit, repellat molestiae dignissimos?</p>
+
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="">
+        <h5>Teeth Whitening</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae autem animi sit, repellat molestiae dignissimos?</p>
+
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="">
+        <h5>Teeth Whitening</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae autem animi sit, repellat molestiae dignissimos?</p>
+
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="">
+        <h5>Teeth Whitening</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae autem animi sit, repellat molestiae dignissimos?</p>
+
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="">
+        <h5>Teeth Whitening</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae autem animi sit, repellat molestiae dignissimos?</p>
+
+      </div>
+    </div>
+  </body>
+</html>
